@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login - praveen.co.in</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <img src="assets/Senna.jpg" alt="ionic-demo">
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title>praveen.co.in</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-item>
+        <ion-input [(ngModel)]="user.email" placeholder="username"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-input [(ngModel)]="user.password" placeholder="password" type="password"></ion-input>
+      </ion-item>
+      <br>
+      <ion-button expand="block" (click)="login()">login</ion-button>
+      <ion-button expand="block" color="secondary" (click)="register()">register</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
